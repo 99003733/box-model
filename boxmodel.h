@@ -17,8 +17,8 @@
  * 
  */
 
-typedef struct 
-{   /* data */
+typedef struct
+{ /* data */
     unsigned int unique_id;
     unsigned int length;
     unsigned int breadth;
@@ -26,13 +26,9 @@ typedef struct
     char colour[20];
     unsigned int weight;
     unsigned long volume = 0;
-}Boxes;
+} Boxes;
 
+void display(const Boxes *ptr);
+Boxes *addbox(Boxes *box_add, int number_of_boxes);
 
-Boxes* addbox(Boxes *box_add, int number_of_boxes);
-void display(const Boxes* ptr);
-
-
-
-
-#endif 
+#endif
